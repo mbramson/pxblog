@@ -63,3 +63,8 @@ config :logger, level: :info
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
 import_config "prod.secret.exs"
+
+# Configure hash strength (high for production)
+config :comeonin, bcrypt_log_rounds: 14
+
+
